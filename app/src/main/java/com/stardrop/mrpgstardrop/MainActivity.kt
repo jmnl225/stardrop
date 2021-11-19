@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
 
     private var icons_off = arrayOf(AppCompatResources.getDrawable(this, R.drawable.dice_off), AppCompatResources.getDrawable(this, R.drawable.search_off),
         AppCompatResources.getDrawable(this, R.drawable.freind_off), AppCompatResources.getDrawable(this, R.drawable.more_off) )
-
      */
 
 
