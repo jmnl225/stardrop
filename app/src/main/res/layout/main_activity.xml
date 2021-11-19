@@ -20,7 +20,6 @@
         android:layout_height="wrap_content"
         app:tabRippleColor="@null"
         app:tabIconTint="@null"
-        app:tabIndicatorColor="@"
         />
 
 </LinearLayout>

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import android.widget.TableLayout
+import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.widget.ViewPager2
@@ -44,6 +45,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init(){
+        Toast.makeText(this, "ddddddddddddddd",Toast.LENGTH_SHORT).show()
         mainAdapter = MainAdapter(this)
         //mainAdapter.addFragment(HomeFragment())
         //mainAdapter.addFragment(SearchFragment())
@@ -58,17 +60,6 @@ class MainActivity : AppCompatActivity() {
         viewPager.adapter = mainAdapter
         viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         viewPager.adapter?.notifyDataSetChanged()
-
-        /*
-        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-                //Log.e("ViewPagerFragment", "Page ${position+1}")
-                //탭 선택된걸로 바꾸기
-            }
-        })
-         */
-
 
 
         createMenus()
